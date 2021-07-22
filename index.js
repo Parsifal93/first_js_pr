@@ -221,4 +221,4 @@ const user = {
   }
 }
 
-user.giveInfo() 
+user.info.giveInfo() 
