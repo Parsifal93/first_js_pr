@@ -197,9 +197,28 @@
 
 console.log(sayStr());*/
 
-const giraffe = {
+/*const giraffe = {
   age: 5,
   weight: 100, 
   sleeping_girafe = false,
 
+}*/
+
+const user = {
+  firstName: "Jhon",
+  lastName: "Doe",
+  
+  giveInfo: function () {
+    console.log(this)
+  },
+  info: {
+ 
+    
+    giveInfo: function() {
+      console.log (this)
+
+    },
+  }
 }
+
+user.giveInfo() 
