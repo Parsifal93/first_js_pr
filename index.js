@@ -204,21 +204,50 @@ console.log(sayStr());*/
 
 }*/
 
-const user = {
-  firstName: "Jhon",
-  lastName: "Doe",
+// const user = {
+//   firstName: "Jhon",
+//   lastName: "Doe",
   
-  giveInfo: function () {
-    console.log(this)
-  },
-  info: {
+//   giveInfo: function () {
+//     console.log(this)
+//   },
+//   info: {
  
     
-    giveInfo: function() {
-      console.log (this)
+//     giveInfo: function() {
+//       console.log (this)
 
-    },
-  }
-}
+//     },
+//   }
+// }
 
-user.info.giveInfo() 
+// user.info.giveInfo() 
+
+
+
+
+// ////////////////////
+// const array = [1, 3, 5, 7];
+
+// console.log(array[2]);
+// array[2] = 2
+// console.log(array[2]);
+
+// console.log(array);
+// array.pop();
+// console.log(array);
+
+// array.splice(0,);
+// console.log(array);
+  
+// for(let i= 0;i <array.length; i++) {
+//   array.pop();
+
+// }
+// console.log(array);
+
+// Array.push(9, 11, 13, 15)
+// console.log(Array);
+
+console.log(array);
+array.unshift(-7, -5, -3, 15);
