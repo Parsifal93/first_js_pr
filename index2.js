@@ -85,5 +85,51 @@
 
 
 ///////десятое задание////////
-const array = [1,2,3,4,5,6,7,8,9,10];
+// const array = [1,2,3,4,5,6,7,8,9,10];
+
+
+
+
+
+//////////////////////////////////////////////////
+// const mobiles = [{prise: 120}, {price: 200}, {price: 150}];
+
+// const reduceSumm = (accum, value) => {
+//     console.log(accum);
+//      return Number(accum) + value.price;
+// }
+
+// const summPrices = mobiles.reduce(reduceSumm, 0);
+// console.log(summPrices);
+
+
+
+class User {
+    constructor(email, phone, imgSrc, gender, age) {
+        if(age < User.ageRestriction) {
+            throw new Error(
+                "Age must be greater than " + User.ageRestriction + "years"
+            );
+        }
+        this.email = email;
+        this.phone = phone;
+        this.imgSrc = imgSrc;
+        this.gender = gender;
+        this.score = 0;
+
+        this.id = ++User.userCount;
+    }
+        sendSms(message) {
+            console.log(`Number phone sent to ${this.phone} whith sms: ${message} `);
+        }
+        sendEmail(message) {
+            console.log(`email sent to ${this.email} with message: ${message}`);
+        }
+        addScore(amount) {
+            this.score += amount;
+            return this.score;
+           
+        }
+        
+    }
 
